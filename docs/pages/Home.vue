@@ -9,7 +9,7 @@ import RealTimeTracking from "./RealTimeTracking.vue";
 import SmartNav from "./SmartNav.vue";
 
 
-const { isMobile, isMedium } = useDetectMobile();
+const { isMobile } = useDetectMobile();
 const { name, tagline, multiPlatform, globalTrade } = useLocale();
 
 const section1 = useTemplateRef("section1");
@@ -77,7 +77,7 @@ onMounted(() => {
         </div>
 
         <div ref="hero-image" class="w-auto mx-auto lg:w-5xl scale-80 sticky top-30%" :style="{
-          transform: `scale(${0.8 + (imgEased * 0.3)}) translateY(-${imgEased * 120}px)`,
+          transform: `scale(${0.8 + (imgEased * 0.3)}) translateY(-${imgEased * 100}px)`,
         }">
           <img src="https://assets.lbctrl.com/uploads/92a6beb3-72c5-48d3-83c2-ad5d6306598b/hero-image.png"
             alt="Longbridge Pro Interface" class="w-full h-auto rounded-lg" />
